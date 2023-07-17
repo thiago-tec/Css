@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Card</title>
+    <style>
+
+        .curso a{
+            color: black;
+            text-decoration: none;
+        }
+
+        .curso{
+            /* float: left; */
+            
+            display: inline-block;
+            margin:10px;
+            padding: 5px;
+            background-color: white;
+            border-radius: 2px;
+            box-shadow: 2px 3px 10px rgb(117, 117, 117);
+            cursor: pointer;
+            
+        }
+        .curso img{
+            width: 300px;
+            height: 180px;
+        }
+
+        .curso-info{
+            margin-top: -30px;
+            padding: 10px;
+            height: 110px;
+            overflow: hidden;
+        }
+
+        .curso-info h4{
+            width: 250px;
+            text-align:left;
+            font-weight: 100;
+            font-size: 20px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        .curso-info p{
+            
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .curso-preco{
+            margin-top: 20px;
+            text-align: right;
+            word-spacing: 10px;
+        }
+
+        .preco-de{
+            font-size: 20px;
+            color: rgb(145, 32, 32);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 100;
+            text-decoration: line-through;  
+        }
+
+        .preco-por{
+            color: green;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 700;
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Card</h1>
+
+    <h2>Objetivo</h2>
+    <img src="http://files.cod3r.com.br/curso-web/card.png" height="340" alt="Objetivo">
+
+    <h2>Resultado (preço fake)</h2>
+
+    <div>
+
+        <div class="curso">
+            <a href="https://www.udemy.com/course/curso-docker/">
+            <img src="http://files.cod3r.com.br/curso-web/curso1.jpg" />
+            <div class="curso-info">
+                <h4>Docker: Ferramenta essencial para Desenvolvedores</h4>
+                <p>Prof. Fulano</p>
+            </div>
+            <div class="curso-preco">
+                <span class="preco-de">R$80,00</span>
+                <span class="preco-por">R$50,00</span>
+            </div>
+            </a>
+        </div>
+
+        <div class="curso">
+            <a href="https://www.udemy.com/course/curso-web/">
+            <img src="http://files.cod3r.com.br/curso-web/curso2.jpg" />
+            <div class="curso-info">
+                <h4>Web Moderno com Javascript + Projetos</h4>
+                <p>Prof. Sicrano Filho</p>
+            </div>
+            <div class="curso-preco">
+                <span class="preco-de">R$80,00</span>
+                <span class="preco-por">R$50,00</span>
+            </div>
+            </a>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
